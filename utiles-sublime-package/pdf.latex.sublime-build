@@ -1,0 +1,5 @@
+{
+    "shell_cmd": "pdflatex -synctex=1 -interaction=nonstopmode \"$file\"",
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.tex",
+}

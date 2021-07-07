@@ -1,0 +1,18 @@
+[
+	{ "keys": ["ctrl+.", "n"], "command": "normalizar" },
+    { "keys": ["ctrl+.", "i"], "command": "instante" },
+    { "keys": ["ctrl+.", "f"], "command": "fecha" },
+    { "keys": ["ctrl+.", "d"], "command": "duracion" },
+    { "keys": ["ctrl+.", "s"], "command": "sumartiempos" },
+    { "keys": ["ctrl+.", "a"], "command": "instanteafecha" },
+    { "keys": ["ctrl+.", "o"], "command": "instanteahora" },
+    { "keys": ["ctrl+.", "c"], "command": "calcular" },
+    { "keys": ["ctrl+.", "q"], "command": "calcularfraccion" },
+    { "keys": ["ctrl+.", "shit+Q"], "command": "calculardecimal" },
+    { "keys": ["ctrl+.", "b"], "command": "cmdbash" },
+    { "keys": ["ctrl+.", "p"], "command": "cmdpython3" },
+    { "keys": ["ctrl+.", "y"], "command": "yttitulo" },
+    { "keys": ["ctrl+.", "g"], "command": "buscar_ddg" },
+    { "keys": ["ctrl+.", "z"], "command": "test" },
+    { "keys": ["f2"], "command": "abrir_archivo" },
+]

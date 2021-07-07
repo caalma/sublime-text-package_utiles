@@ -1,0 +1,6 @@
+[
+    { "caption": "-"},
+    { "command": "abrir_archivo", "caption": "Abrir archivo" },
+    { "command": "buscar_ddg", "caption": "Buscar en DDG" },
+    { "command": "abrir_terminal", "caption": "Abrir Consola en carpeta" },
+]

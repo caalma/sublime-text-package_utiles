@@ -1,0 +1,139 @@
+[
+    {
+        "id" : "utiles",
+        "caption": "Útiles",
+        "children":
+            [
+                
+                {
+                    "id": "texto",
+                    "caption": "Texto",
+                    "children": [
+                        {
+                            "id": "pegarhtmltext",
+                            "caption": "Pegar Texto-HTML",
+                            "command": "pegarhtmltext",
+                        },
+                        {
+                            "id": "normalizar",
+                            "caption": "Normalizar (selección)",
+                            "command": "normalizar",
+                        },
+                    ],
+                },
+                {
+                    "id": "ejecutar",
+                    "caption": "Ejecutar",
+                    "children": [
+
+                        {
+                            "id": "cmdbash",
+                            "caption": "Bash (selección)",
+                            "command": "cmdbash",
+                        },
+                        {
+                            "id": "cmdpython3",
+                            "caption": "Python3 (selección)",
+                            "command": "cmdpython3",
+                        },
+                        {
+                            "id": "bucar_ddg",
+                            "caption": "Buscar en DDG (selección)",
+                            "command": "buscar_ddg",
+                        },
+                    ],
+                },
+                
+                {
+                    "id": "matematica",
+                    "caption": "Matemática",
+                    "children": [
+                        {
+                            "id": "calcular",
+                            "caption": "Calcular (selección)",
+                            "command": "calcular",
+                        },
+                        {
+                            "id": "calcularfraccion",
+                            "caption": "Calcular Fracción (selección)",
+                            "command": "calcularfraccion",
+                        },
+                        {
+                            "id": "calculardecimal",
+                            "caption": "Calcular Decimal (selección)",
+                            "command": "calculardecimal",
+                        },
+                    ],
+                },
+                {
+                    "id": "url",
+                    "caption": "Url",
+                    "children": [
+                        {
+                            "id": "yttitulo",
+                            "caption": "Youtube Título (selección)",
+                            "command": "yttitulo",
+                        },
+                        {
+                            "id": "textodesdeurl",
+                            "caption": "Texto desde URL (selección)",
+                            "command": "textodesdeurl",
+                        },
+                    ],
+                },
+                {
+                    "id": "tiempo",
+                    "caption": "Tiempo",
+                    "children": [
+                        {
+                            "id": "fecha",
+                            "caption": "Fecha",
+                            "command": "fecha",
+                        },
+                        {
+                            "id": "instante",
+                            "caption": "Instante",
+                            "command": "instante",
+                        },
+                        {
+                            "id": "instanteafecha",
+                            "caption": "Instante a Fecha (selección)",
+                            "command": "instanteafecha",
+                        },
+                        {
+                            "id": "instanteahora",
+                            "caption": "Instante a Hora (selección)",
+                            "command": "instanteahora",
+                        },
+                        {
+                            "id": "duracion",
+                            "caption": "Duración (selección)",
+                            "command": "duracion",
+                        },
+                        {
+                            "id": "sumartiempos",
+                            "caption": "Sumar Tiempos (selección)",
+                            "command": "sumartiempos",
+                        },
+                    ],
+                },
+                {
+                    "id": "extras",
+                    "caption": "Extras",
+                    "children": [
+                        {
+                            "id": "abrirpk",
+                            "caption": "Abrir Plugin Package",
+                            "command": "abrirpk",
+                        },
+                        {
+                            "id": "test",
+                            "caption": "Test",
+                            "command": "test",
+                        },
+                    ],
+                },
+                
+            ]
+    }
+]
