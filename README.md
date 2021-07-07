@@ -6,7 +6,7 @@
 Copiar la carpeta "./utiles-sublime-package/":
 
 + en Linux, a: "~/.config/sublime-text-3/Packages/"
-+ en Windows, a:  "~/.config/sublime-text-3/Packages/"
++ en Windows, a:  "%AppData%\Roaming\Sublime Text 3\Packages"
 
 
 ## Requerimientos de algunas utilidades
