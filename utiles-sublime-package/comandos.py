@@ -6,7 +6,7 @@ from os.path import dirname, expanduser
 from subprocess import Popen, PIPE
 from datetime import datetime
 import platform
-
+from os import unlink
 
 if 'Linux' == platform.system():
     disponible = True
@@ -87,7 +87,6 @@ class cmdpython3Command(sublime_plugin.TextCommand):
                 
                 p = Popen(['python3', artmp], shell=False, cwd=ruta, stdout=PIPE, stderr=PIPE)
 
-
                 if ignorar_respuesta:
                     res = ''
                 else:
@@ -104,5 +103,4 @@ class cmdpython3Command(sublime_plugin.TextCommand):
                         res.append(te + se + err)  
                 
                 self.view.insert(edit, posfin, se.join(res))
-
                 unlink(artmp)
