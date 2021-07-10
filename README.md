@@ -4,7 +4,7 @@
 ## Funcionalidades disponibles:
 
 + **Pegar Texto-HTML**: Pega el contenido copiado de una página web en modo html, siendo el modo normal de pegado el de texto plano.
-+ **Normalizar**: Reduce el texto seleccionado a los caracteres "a-z" y "_".
++ **Normalizar**: Reduce el texto seleccionado a los caracteres "a-z", "0-9", "_" y ".".
 + **Bash**: Ejecuta un bloque de texto como Bash, y agrega el resultado si lo hubiese.
 + **Python3**: Ejecuta un bloque de texto como Python3, y agrega el resultado si lo hubiese.
 + **Buscar en DDG**: Abre el navegador web por defecto y busca el texto seleccionado en el buscador DuckDuckGo.
