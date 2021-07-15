@@ -37,6 +37,11 @@
                             "command": "cmdpython3",
                         },
                         {
+                            "id": "cmdnodejs",
+                            "caption": "NodeJS (selección)",
+                            "command": "cmdnodejs",
+                        },
+                        {
                             "id": "bucar_ddg",
                             "caption": "Buscar en DDG (selección)",
                             "command": "buscar_ddg",
