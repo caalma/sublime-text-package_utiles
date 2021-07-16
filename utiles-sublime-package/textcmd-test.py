@@ -14,3 +14,10 @@ class testCommand(sublime_plugin.TextCommand):
             extra = 'TEST'
             tex = ' # {} {}'.format(extra, data)
             self.view.insert(edit, posfin, tex)
+
+            sublime.status_message(tex)
+            
+            if sublime.ok_cancel_dialog('Esto es una prueba?', 'SI', 'NO'):
+                sublime.message_dialog('BIEN: ' + tex)
+            else:
+                sublime.error_message('ERROR: ' + tex)
