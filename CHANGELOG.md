@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.3] - 2021-07-16
+### Added
+- Tecla F3 para abrir terminal.
+- Comandos abrirterminal y abrirrecursos en sublime-commands.
+
+### Changed
+- Comando abrirarchivo por abrirrecursos.
+- Abrir recurso abre URL o pathfiles.
+- Ajuste de nombre de comandos de camelCase a lineal.
+- Unificación de apertura de url en buscar con ddg.
+- Renombrado de archivos de configuración de sublime.
+
+
 ## [0.0.2] - 2021-07-15
 ### Added
 - Ejecutar Bloque NodeJS.

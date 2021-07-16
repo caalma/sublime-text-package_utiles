@@ -44,7 +44,7 @@
                         {
                             "id": "bucar_ddg",
                             "caption": "Buscar en DDG (selección)",
-                            "command": "buscar_ddg",
+                            "command": "buscarddg",
                         },
                     ],
                 },

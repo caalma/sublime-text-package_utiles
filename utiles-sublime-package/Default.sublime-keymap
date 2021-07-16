@@ -13,7 +13,8 @@
     { "keys": ["ctrl+.", "b", "p"], "command": "cmdpython3" },
     { "keys": ["ctrl+.", "b", "n"], "command": "cmdnodejs" },
     { "keys": ["ctrl+.", "y"], "command": "yttitulo" },
-    { "keys": ["ctrl+.", "g"], "command": "buscar_ddg" },
+    { "keys": ["ctrl+.", "g"], "command": "buscarddg" },
     { "keys": ["ctrl+.", "z"], "command": "test" },
-    { "keys": ["f2"], "command": "abrir_archivo" },
+    { "keys": ["f2"], "command": "abrirrecurso" },
+    { "keys": ["f3"], "command": "abrirterminal" },
 ]

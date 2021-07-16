@@ -5,7 +5,7 @@
     {"caption": "UTILES: Ejecutar: Comando Bash", "command": "cmdbash"},
     {"caption": "UTILES: Ejecutar: Comando Python", "command": "cmdpython3"},
     {"caption": "UTILES: Ejecutar: Comando NodeJS", "command": "cmdnodejs"},
-    {"caption": "UTILES: Ejecutar: Buscar en DDG", "command": "buscar_ddg"},
+    {"caption": "UTILES: Ejecutar: Buscar en DDG", "command": "buscarddg"},
 
     {"caption": "UTILES: Matemática: Calcular", "command": "calcular"},
     {"caption": "UTILES: Matemática: Calcular Fración", "command": "calcularfraccion"},
@@ -20,4 +20,7 @@
     {"caption": "UTILES: Tiempo: Sumar Tiempos", "command": "sumartiempos"},
     {"caption": "UTILES: Tiempo: Instante a Fecha", "command": "instanteafecha"},
     {"caption": "UTILES: Tiempo: Instante a Hora", "command": "instanteafecha"},
+
+    {"caption": "UTILES: Abrir Terminal", "command": "abrirterminal"},
+    {"caption": "UTILES: Abrir Recursos ( URL | pathfile )", "command": "abrirrecurso"},
 ]

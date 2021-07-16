@@ -1,24 +1,39 @@
-# -*- coding:utf8 -*- 
-
 import sublime
 import sublime_plugin
-from os.path import dirname, realpath, exists, expanduser, join
-from subprocess import Popen, PIPE
 import webbrowser
+from os.path import exists, realpath, dirname, join
+#abriremos http://www.caalma.ar
 
-
-class abrirArchivoCommand(sublime_plugin.TextCommand):
-    def run(self, edit, data=''):
+class abrirrecursoCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
         ss = self.view.sel()
         for s in ss:
-            region = s
-            posfin = s.end()
-            urr = self.view.substr(region).strip()
-            if not urr.startswith('/'):
-                art = self.view.window().active_view().file_name()
-                ruta = dirname(art) if art else expanduser('~')
-                urr = join(ruta, urr)
+            start = s.a
+            end = s.b
 
-            uri = realpath(urr)
-            if exists(uri):
-                webbrowser.open(uri)
+            view_size = self.view.size()
+            terminator = ['\t', ' ', '\"', '\'', '(', ')']
+
+            while (start > 0
+                    and not self.view.substr(start - 1) in terminator
+                    and self.view.classify(start) & sublime.CLASS_LINE_START == 0):
+                start -= 1
+
+            while (end < view_size
+                    and not self.view.substr(end) in terminator
+                    and self.view.classify(end) & sublime.CLASS_LINE_END == 0):
+                end += 1
+
+            path = self.view.substr(sublime.Region(start, end))
+            
+            if path.startswith('http'):
+                webbrowser.open_new_tab(path)
+            else:
+                file = self.view.window().active_view().file_name()
+                folder = dirname(file) if file else expanduser('~')
+                uri = realpath(path) if path.startswith('/') else realpath(join(folder, path))
+
+                if exists(uri):
+                    webbrowser.open(uri)
+                else:
+                    self.view.show_popup('<p style="color:red">{}</p>'.format(uri.strip()))
