@@ -22,6 +22,28 @@
                     ],
                 },
                 {
+                    "id": "abrir",
+                    "caption": "Abrir",
+                    "children": [
+
+                        {
+                            "id": "recurso",
+                            "caption": "Recurso",
+                            "command": "abrirrecurso",
+                        },
+                        {
+                            "id": "terminal",
+                            "caption": "Terminal",
+                            "command": "abrirterminal",
+                        },
+                        {
+                            "id": "bucar_ddg",
+                            "caption": "Buscar en DDG (selección)",
+                            "command": "buscarddg",
+                        },
+                    ],
+                },
+                {
                     "id": "ejecutar",
                     "caption": "Ejecutar",
                     "children": [
@@ -41,14 +63,8 @@
                             "caption": "NodeJS (selección)",
                             "command": "cmdnodejs",
                         },
-                        {
-                            "id": "bucar_ddg",
-                            "caption": "Buscar en DDG (selección)",
-                            "command": "buscarddg",
-                        },
                     ],
                 },
-                
                 {
                     "id": "matematica",
                     "caption": "Matemática",
