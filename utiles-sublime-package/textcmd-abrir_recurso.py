@@ -1,12 +1,12 @@
 import sublime
 import sublime_plugin
 import webbrowser
-from os.path import exists, realpath, dirname, join
-#abriremos http://www.caalma.ar
+from os.path import exists, realpath, dirname, join, expanduser
 
 class abrirrecursoCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         ss = self.view.sel()
+        err = []
         for s in ss:
             start = s.a
             end = s.b
@@ -36,4 +36,6 @@ class abrirrecursoCommand(sublime_plugin.TextCommand):
                 if exists(uri):
                     webbrowser.open(uri)
                 else:
-                    self.view.show_popup('<p style="color:red">{}</p>'.format(uri.strip()))
+                    err.append(uri)
+        if err:
+            sublime.status_message('ERROR EN: ' + ', '.join(err))
