@@ -14,7 +14,7 @@ if 'Windows' == platform.system():
     cmd = ['cmd']
 
 
-class abrirterminalCommand(sublime_plugin.TextCommand):
+class AbrirTerminalCommand(sublime_plugin.TextCommand):
     def run(self, edit, data=''):
         r = [dirname(self.view.window().active_view().file_name())]
         Popen(cmd + r)

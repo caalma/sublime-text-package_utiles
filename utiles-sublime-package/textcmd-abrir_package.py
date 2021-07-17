@@ -6,7 +6,6 @@ from os.path import realpath, dirname
 import webbrowser 
 
 
-class abrirpkCommand(sublime_plugin.TextCommand):
+class AbrirPackageCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        rpk = dirname(realpath(__file__))
-        webbrowser.open(rpk)
+        webbrowser.open(dirname(realpath(__file__)))

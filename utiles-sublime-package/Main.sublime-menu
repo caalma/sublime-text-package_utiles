@@ -10,14 +10,14 @@
                     "caption": "Texto",
                     "children": [
                         {
-                            "id": "pegarhtmltext",
+                            "id": "pegar_html_text",
                             "caption": "Pegar Texto-HTML",
-                            "command": "pegarhtmltext",
+                            "command": "pegar_html_text",
                         },
                         {
-                            "id": "grabarseleccion",
+                            "id": "grabar_seleccion",
                             "caption": "Grabar Selección",
-                            "command": "grabarseleccion",
+                            "command": "grabar_seleccion",
                         },
                         {
                             "id": "normalizar",
@@ -34,17 +34,17 @@
                         {
                             "id": "recurso",
                             "caption": "Recurso",
-                            "command": "abrirrecurso",
+                            "command": "abrir_recurso",
                         },
                         {
                             "id": "terminal",
                             "caption": "Terminal",
-                            "command": "abrirterminal",
+                            "command": "abrir_terminal",
                         },
                         {
                             "id": "bucar_ddg",
                             "caption": "Buscar en DDG (selección)",
-                            "command": "buscarddg",
+                            "command": "buscar_en_ddg",
                         },
                     ],
                 },
@@ -54,19 +54,19 @@
                     "children": [
 
                         {
-                            "id": "cmdbash",
+                            "id": "cmd_bash",
                             "caption": "Bash (selección)",
-                            "command": "cmdbash",
+                            "command": "cmd_bash",
                         },
                         {
-                            "id": "cmdpython3",
+                            "id": "cmd_python3",
                             "caption": "Python3 (selección)",
-                            "command": "cmdpython3",
+                            "command": "cmd_python3",
                         },
                         {
-                            "id": "cmdnodejs",
+                            "id": "cmd_nodejs",
                             "caption": "NodeJS (selección)",
-                            "command": "cmdnodejs",
+                            "command": "cmd_nodejs",
                         },
                     ],
                 },
@@ -80,14 +80,14 @@
                             "command": "calcular",
                         },
                         {
-                            "id": "calcularfraccion",
+                            "id": "calcular_fraccion",
                             "caption": "Calcular Fracción (selección)",
-                            "command": "calcularfraccion",
+                            "command": "calcular_fraccion",
                         },
                         {
-                            "id": "calculardecimal",
+                            "id": "calcular_decimal",
                             "caption": "Calcular Decimal (selección)",
-                            "command": "calculardecimal",
+                            "command": "calcular_decimal",
                         },
                     ],
                 },
@@ -96,14 +96,14 @@
                     "caption": "Url",
                     "children": [
                         {
-                            "id": "yttitulo",
+                            "id": " youtube_title",
                             "caption": "Youtube Título (selección)",
-                            "command": "yttitulo",
+                            "command": "youtube_title",
                         },
                         {
-                            "id": "textodesdeurl",
+                            "id": "texto_desde_url",
                             "caption": "Texto desde URL (selección)",
-                            "command": "textodesdeurl",
+                            "command": "texto_desde_url",
                         },
                     ],
                 },
@@ -122,14 +122,14 @@
                             "command": "instante",
                         },
                         {
-                            "id": "instanteafecha",
+                            "id": "  instante_como_fecha",
                             "caption": "Instante a Fecha (selección)",
-                            "command": "instanteafecha",
+                            "command": "instante_como_fecha",
                         },
                         {
-                            "id": "instanteahora",
+                            "id": "instante_como_hora",
                             "caption": "Instante a Hora (selección)",
-                            "command": "instanteahora",
+                            "command": "instante_como_hora",
                         },
                         {
                             "id": "duracion",
@@ -137,9 +137,9 @@
                             "command": "duracion",
                         },
                         {
-                            "id": "sumartiempos",
+                            "id": "sumar_tiempos",
                             "caption": "Sumar Tiempos (selección)",
-                            "command": "sumartiempos",
+                            "command": "sumar_tiempos",
                         },
                     ],
                 },
@@ -148,9 +148,9 @@
                     "caption": "Extras",
                     "children": [
                         {
-                            "id": "abrirpk",
+                            "id": "abrir_package",
                             "caption": "Abrir Plugin Package",
-                            "command": "abrirpk",
+                            "command": "abrir_package",
                         },
                         {
                             "id": "test",

@@ -8,23 +8,18 @@ import platform
 
 
 if 'Linux' == platform.system():
-    python = 'python3'
+    cmd_python = 'python3'
     
 if 'Windows' == platform.system():
-    python = 'python'
+    cmd_python = 'python'
 
 
-class yttituloCommand(sublime_plugin.TextCommand):
+class YoutubeTitleCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        ss = self.view.sel()
-        for s in ss:
-            region = s
-            posfin = s.end()
+        for region in self.view.sel():
             url = self.view.substr(region).strip()
             script = join(dirname(__file__),'extras/yt_info.py')
-
-            p = Popen([python, script, url, 'title'], shell=False, stdout=PIPE, stderr=PIPE)
-            tit = p.stdout.read().decode('utf-8').strip().replace('\n', ' - ')
-
-            tex = ' # {}'.format(tit)
-            self.view.insert(edit, posfin, tex)
+            proc = Popen([cmd_python, script, url, 'title'], shell=False, stdout=PIPE)
+            title = proc.stdout.read().decode('utf-8').strip().replace('\n', ' - ')
+            text = ' # {}'.format(title)
+            self.view.insert(edit, region.end(), text)

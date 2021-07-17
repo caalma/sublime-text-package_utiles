@@ -3,13 +3,12 @@ import sublime_plugin
 import webbrowser
 from os.path import exists, realpath, dirname, join, expanduser
 
-class abrirrecursoCommand(sublime_plugin.TextCommand):
+class AbrirRecursoCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        ss = self.view.sel()
         err = []
-        for s in ss:
-            start = s.a
-            end = s.b
+        for region in self.view.sel():
+            start = region.a
+            end = region.b
 
             view_size = self.view.size()
             terminator = ['\t', ' ', '\"', '\'', '(', ')']

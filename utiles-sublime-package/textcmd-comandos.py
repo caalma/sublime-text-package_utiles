@@ -10,12 +10,14 @@ from os import unlink
 
 if 'Linux' == platform.system():
     disponible = True
+    cmd_python = 'python3'
 
 if 'Windows' == platform.system():
     disponible = False
+    cmd_python = 'python'
 
 
-class cmdbashCommand(sublime_plugin.TextCommand):
+class CmdBashCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         if disponible:
             se = '\n'
@@ -23,13 +25,9 @@ class cmdbashCommand(sublime_plugin.TextCommand):
             to = ''
             prefijo_ignorar_respuesta = '!'
             ignorar_respuesta = False
-            ss = self.view.sel()
-        
-            for s in ss:
-                region = s
-                posfin = s.end()
-                res = []
 
+            for region in self.view.sel():
+                res = []
                 cmd = self.view.substr(region).strip()
                 if cmd[0] == prefijo_ignorar_respuesta:
                     cmd = cmd[1:]
@@ -38,13 +36,13 @@ class cmdbashCommand(sublime_plugin.TextCommand):
                 art = self.view.window().active_view().file_name()
                 ruta = dirname(art) if art else expanduser('~')
                 
-                p = Popen(['bash', '-c', cmd], shell=False, cwd=ruta, stdout=PIPE, stderr=PIPE)
+                process = Popen(['bash', '-c', cmd], shell=False, cwd=ruta, stdout=PIPE, stderr=PIPE)
 
                 if ignorar_respuesta:
                     res = ''
                 else:
-                    out = p.stdout.read().decode('utf8')
-                    err = p.stderr.read().decode('utf8')
+                    out = process.stdout.read().decode('utf8')
+                    err = process.stderr.read().decode('utf8')
 
                     if len(out) > 0:
                         if len(out) == 0:
@@ -55,10 +53,10 @@ class cmdbashCommand(sublime_plugin.TextCommand):
                     if len(err) > 0:
                         res.append(te + se + err)  
                 
-                self.view.insert(edit, posfin, se.join(res))
+                self.view.insert(edit, region.end(), se.join(res))
 
 
-class cmdpython3Command(sublime_plugin.TextCommand):
+class CmdPython3Command(sublime_plugin.TextCommand):
     def run(self, edit):
         if disponible:
             se = '\n'
@@ -66,11 +64,8 @@ class cmdpython3Command(sublime_plugin.TextCommand):
             to = ''
             prefijo_ignorar_respuesta = '!'
             ignorar_respuesta = False
-            ss = self.view.sel()
-        
-            for s in ss:
-                region = s
-                posfin = s.end()
+
+            for region in self.view.sel():
                 res = []
 
                 cmd = self.view.substr(region).strip()
@@ -85,13 +80,13 @@ class cmdpython3Command(sublime_plugin.TextCommand):
                 with open(artmp, 'w') as f:
                     f.write(cmd)
                 
-                p = Popen(['python3', artmp], shell=False, cwd=ruta, stdout=PIPE, stderr=PIPE)
+                process = Popen([cmd_python, artmp], shell=False, cwd=ruta, stdout=PIPE, stderr=PIPE)
 
                 if ignorar_respuesta:
                     res = ''
                 else:
-                    out = p.stdout.read().decode('utf8')
-                    err = p.stderr.read().decode('utf8')
+                    out = process.stdout.read().decode('utf8')
+                    err = process.stderr.read().decode('utf8')
                     
                     if len(out) > 0:
                         if len(out) == 0:
@@ -102,10 +97,10 @@ class cmdpython3Command(sublime_plugin.TextCommand):
                     if len(err) > 0:
                         res.append(te + se + err)  
                 
-                self.view.insert(edit, posfin, se.join(res))
+                self.view.insert(edit, region.end(), se.join(res))
                 unlink(artmp)
 
-class cmdnodejsCommand(sublime_plugin.TextCommand):
+class CmdNodejsCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         if disponible:
             se = '\n'
@@ -113,13 +108,9 @@ class cmdnodejsCommand(sublime_plugin.TextCommand):
             to = ''
             prefijo_ignorar_respuesta = '!'
             ignorar_respuesta = False
-            ss = self.view.sel()
         
-            for s in ss:
-                region = s
-                posfin = s.end()
+            for region in self.view.sel():
                 res = []
-
                 cmd = self.view.substr(region).strip()
                 if cmd[0] == prefijo_ignorar_respuesta:
                     cmd = cmd[1:]
@@ -132,13 +123,13 @@ class cmdnodejsCommand(sublime_plugin.TextCommand):
                 with open(artmp, 'w') as f:
                     f.write(cmd)
                 
-                p = Popen(['nodejs', artmp], shell=False, cwd=ruta, stdout=PIPE, stderr=PIPE)
+                process = Popen(['nodejs', artmp], shell=False, cwd=ruta, stdout=PIPE, stderr=PIPE)
 
                 if ignorar_respuesta:
                     res = ''
                 else:
-                    out = p.stdout.read().decode('utf8')
-                    err = p.stderr.read().decode('utf8')
+                    out = process.stdout.read().decode('utf8')
+                    err = process.stderr.read().decode('utf8')
                     
                     if len(out) > 0:
                         if len(out) == 0:
@@ -149,5 +140,5 @@ class cmdnodejsCommand(sublime_plugin.TextCommand):
                     if len(err) > 0:
                         res.append(te + se + err)  
                 
-                self.view.insert(edit, posfin, se.join(res))
+                self.view.insert(edit, region.end(), se.join(res))
                 unlink(artmp)

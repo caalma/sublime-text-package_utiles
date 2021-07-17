@@ -4,7 +4,7 @@ import sublime
 import sublime_plugin
 
 
-class normalizarCommand(sublime_plugin.TextCommand):
+class NormalizarCommand(sublime_plugin.TextCommand):
     SIGNOS_A_REEMPLAZAR = [
         ['ñ', 'nn'],
         ['á', 'a'],

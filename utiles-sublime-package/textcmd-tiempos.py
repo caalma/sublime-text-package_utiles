@@ -5,20 +5,17 @@ import sublime_plugin
 from datetime import datetime
 
 
-class fechaCommand(sublime_plugin.TextCommand):
+class FechaCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        r = self.view.sel()[0]
-        pos = min(r.a, r.b)
-        tex = str(datetime.now())
-        self.view.insert(edit, pos, tex)
+        region = self.view.sel()[0]
+        init = min(region.a, region.b)
+        text = str(datetime.now())
+        self.view.insert(edit, init, text)
 
 
-class duracionCommand(sublime_plugin.TextCommand):
+class DuracionCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        ss = self.view.sel()
-        for s in ss:
-            region = s
-            posfin = s.end()
+        for region in self.view.sel():
             s = ';'
             rtex = self.view.substr(region).strip(s).split(s)
             i1, i2 = [datetime.fromtimestamp(float(v)) for v in rtex]
@@ -30,59 +27,47 @@ class duracionCommand(sublime_plugin.TextCommand):
             se = se - (ho * sih)
             mi = int(se / sim)
             se = se - (mi * sim)
-            tex = '{:02}h {:02}m {:02}s'.format(ho, mi, se)
-            self.view.insert(edit, posfin, tex)
+            text = '{:02}h {:02}m {:02}s'.format(ho, mi, se)
+            self.view.insert(edit, region.end(), text)
 
 
-class instanteCommand(sublime_plugin.TextCommand):
+class InstanteCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        for s in self.view.sel():
-            pos = min(s.a, s.b)
-            ins = datetime.now().timestamp()
-            tex = '{};'.format(ins)
-            self.view.insert(edit, pos, tex)
+        for region in self.view.sel():
+            init = min(region.a, region.b)
+            now = datetime.now().timestamp()
+            text = '{};'.format(now)
+            self.view.insert(edit, init, text)
 
 
-class instanteafechaCommand(sublime_plugin.TextCommand):
+class InstanteComoFechaCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        ss = self.view.sel()
-        for s in ss:
-            region = s
-            posfin = s.end()
-            tex = self.view.substr(region).strip()
-            timestamp = float(tex.strip().strip(';'))
-            tiempo = datetime.fromtimestamp(timestamp)
-            extra = str(tiempo.strftime("%Y-%m-%d"))
-            tex = ' {}'.format(extra)
-            self.view.insert(edit, posfin, tex)
+        for region in self.view.sel():
+            text_input = self.view.substr(region).strip()
+            timestamp = float(text_input.strip().strip(';'))
+            date = datetime.fromtimestamp(timestamp)
+            text = ' {}'.format(date.strftime("%Y-%m-%d"))
+            self.view.insert(edit, region.end(), text)
 
 
-class instanteahoraCommand(sublime_plugin.TextCommand):
+class InstanteComoHoraCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        ss = self.view.sel()
-        for s in ss:
-            region = s
-            posfin = s.end()
-            tex = self.view.substr(region).strip()
-            timestamp = float(tex.strip().strip(';'))
-            tiempo = datetime.fromtimestamp(timestamp)
-            extra = str(tiempo.strftime("%H:%M:%S"))
-            tex = ' {}'.format(extra)
-            self.view.insert(edit, posfin, tex)
+        for region in self.view.sel():
+            text_input = self.view.substr(region).strip()
+            timestamp = float(text_input.strip().strip(';'))
+            date = datetime.fromtimestamp(timestamp)
+            text = ' {}'.format(date.strftime("%H:%M:%S"))
+            self.view.insert(edit, region.end(), text)
 
 
-class sumartiemposCommand(sublime_plugin.TextCommand):
+class SumarTiemposCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        ss = self.view.sel()
-        for s in ss:
-            region = s
-            posfin = s.end()
-            tex = self.view.substr(region).strip()
-            extra = self.sumar_tiempos(tex)
-            tex = ' = {}'.format(extra)
-            self.view.insert(edit, posfin, tex)
+        for region in self.view.sel():
+            text_input = self.view.substr(region).strip()
+            text = ' = {}'.format(self.__add(text_input))
+            self.view.insert(edit, region.end(), text)
 
-    def sumar_tiempos(self, t):
+    def __add(self, t):
         lin = t.strip().split('\n')
         dat = [l.strip().split(' ') for l in lin]
         elem = { 'h': [], 'm': [], 's': []}

@@ -1,28 +1,30 @@
 [
     {"caption": "UTILES: Texto: Normalizar", "command": "normalizar"},
-    {"caption": "UTILES: Texto: Pegar Texto HTML", "command": "pegarhtmltext"},
+    {"caption": "UTILES: Texto: Pegar Texto HTML", "command": "pegar_html_text"},
 
-    {"caption": "UTILES: Texto: Grabar Seleción", "command": "grabarseleccion"},
+    {"caption": "UTILES: Texto: Grabar Seleción", "command": "grabar_seleccion"},
 
-    {"caption": "UTILES: Ejecutar: Comando Bash", "command": "cmdbash"},
-    {"caption": "UTILES: Ejecutar: Comando Python", "command": "cmdpython3"},
-    {"caption": "UTILES: Ejecutar: Comando NodeJS", "command": "cmdnodejs"},
-    {"caption": "UTILES: Ejecutar: Buscar en DDG", "command": "buscarddg"},
+    {"caption": "UTILES: Ejecutar: Comando Bash", "command": "cmd_bash"},
+    {"caption": "UTILES: Ejecutar: Comando Python", "command": "cmd_python3"},
+    {"caption": "UTILES: Ejecutar: Comando NodeJS", "command": "cmd_nodejs"},
+    {"caption": "UTILES: Ejecutar: Buscar en DDG", "command": "buscar_en_ddg"},
 
     {"caption": "UTILES: Matemática: Calcular", "command": "calcular"},
-    {"caption": "UTILES: Matemática: Calcular Fración", "command": "calcularfraccion"},
-    {"caption": "UTILES: Matemática: Calcular Decimal", "command": "calculardecimal"},
+    {"caption": "UTILES: Matemática: Calcular Fración", "command": "calcular_fraccion"},
+    {"caption": "UTILES: Matemática: Calcular Decimal", "command": "calcular_decimal"},
     
-    {"caption": "UTILES: URL: Texto desde URL", "command": "textodesdeurl"},
-    {"caption": "UTILES: URL: Título de Youtube", "command": "yttitulo"},
+    {"caption": "UTILES: URL: Texto desde URL", "command": "texto_desde_url"},
+    {"caption": "UTILES: URL: Título de Youtube", "command": "youtube_title"},
     
     {"caption": "UTILES: Tiempo: Instante", "command": "instante"},
     {"caption": "UTILES: Tiempo: Fecha", "command": "fecha"},
     {"caption": "UTILES: Tiempo: Duración", "command": "duracion"},
-    {"caption": "UTILES: Tiempo: Sumar Tiempos", "command": "sumartiempos"},
-    {"caption": "UTILES: Tiempo: Instante a Fecha", "command": "instanteafecha"},
-    {"caption": "UTILES: Tiempo: Instante a Hora", "command": "instanteafecha"},
+    {"caption": "UTILES: Tiempo: Sumar Tiempos", "command": "sumar_tiempos"},
+    {"caption": "UTILES: Tiempo: Instante a Fecha", "command": "instante_como_fecha"},
+    {"caption": "UTILES: Tiempo: Instante a Hora", "command": "instante_como_hora"},
 
-    {"caption": "UTILES: Abrir Terminal", "command": "abrirterminal"},
-    {"caption": "UTILES: Abrir Recursos ( URL | pathfile )", "command": "abrirrecurso"},
+    {"caption": "UTILES: Abrir Terminal", "command": "abrir_terminal"},
+    {"caption": "UTILES: Abrir Recursos ( URL | pathfile )", "command": "abrir_recurso"},
+
+    {"caption": "UTILES: Test", "command": "test"},
 ]

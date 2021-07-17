@@ -2,14 +2,12 @@
 
 import sublime
 import sublime_plugin
+import webbrowser
 
 
-class buscarddgCommand(sublime_plugin.TextCommand):
+class BuscarEnDdgCommand(sublime_plugin.TextCommand):
     def run(self, edit, data=''):
-        ss = self.view.sel()
-        for s in ss:
-            region = s
-            posfin = s.end()
-            bus = self.view.substr(region).strip()
-            url = 'http://duckduckgo.com?q={}'.format(bus.replace(' ', '+'))
+        for region in self.view.sel():
+            text_input = self.view.substr(region).strip()
+            url = 'http://duckduckgo.com?q={}'.format(text_input.replace(' ', '+'))
             webbrowser.open_new_tab(url)

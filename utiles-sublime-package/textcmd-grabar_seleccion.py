@@ -1,15 +1,13 @@
 import sublime
 import sublime_plugin
 import webbrowser
-from os.path import exists, realpath, dirname, join, expanduser
 
-class grabarseleccionCommand(sublime_plugin.TextCommand):
+
+class GrabarSeleccionCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        sublime.select_folder_dialog(self.save)
+        sublime.save_dialog(self.save)
 
-    def save(self, folder):
-        ss = self.view.sel()
-        for i, s in enumerate(ss):
-            name = '{:03d}'.format(i)
-            with open(join(folder, name), 'w') as f:
-                f.write(self.view.substr(sublime.Region(s.a, s.b)))
+    def save(self, filename):
+        region = self.view.sel()[0]
+        with open(filename, 'w') as f:
+            f.write(self.view.substr(sublime.Region(region.a, region.b)))
