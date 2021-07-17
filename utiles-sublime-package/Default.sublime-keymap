@@ -17,4 +17,5 @@
     { "keys": ["ctrl+.", "z"], "command": "test" },
     { "keys": ["f2"], "command": "abrirrecurso" },
     { "keys": ["f3"], "command": "abrirterminal" },
+    { "keys": ["f4"], "command": "grabarseleccion" },
 ]

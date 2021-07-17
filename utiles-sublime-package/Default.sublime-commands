@@ -2,6 +2,8 @@
     {"caption": "UTILES: Texto: Normalizar", "command": "normalizar"},
     {"caption": "UTILES: Texto: Pegar Texto HTML", "command": "pegarhtmltext"},
 
+    {"caption": "UTILES: Texto: Grabar Seleción", "command": "grabarseleccion"},
+
     {"caption": "UTILES: Ejecutar: Comando Bash", "command": "cmdbash"},
     {"caption": "UTILES: Ejecutar: Comando Python", "command": "cmdpython3"},
     {"caption": "UTILES: Ejecutar: Comando NodeJS", "command": "cmdnodejs"},

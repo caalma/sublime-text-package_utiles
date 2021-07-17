@@ -21,6 +21,7 @@
 + **Sumar Tiempos**: Devuelve la suma de varios tiempos seleccioandos.
 + **Terminal en carpeta actual**: Abrir una ventada de terminal en la ruta del documento actual.
 + **Abrir Recurso**: Si el path o la url son válidos la abre con el software por defecto del sistema operativo. El path puede ser obsoluto o relativo. La url debe comenzar con 'http'.
++ **Grabar Selección**: Graba lo seleccionado en un archivo individual.
 
 ## Modo de uso
 

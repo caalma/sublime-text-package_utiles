@@ -15,6 +15,11 @@
                             "command": "pegarhtmltext",
                         },
                         {
+                            "id": "grabarseleccion",
+                            "caption": "Grabar Selección",
+                            "command": "grabarseleccion",
+                        },
+                        {
                             "id": "normalizar",
                             "caption": "Normalizar (selección)",
                             "command": "normalizar",
