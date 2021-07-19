@@ -1,16 +1,13 @@
-# -*- coding:utf8 -*- 
-
 import sublime
 import sublime_plugin
 from os.path import dirname
 from subprocess import Popen
-import platform
 
 
-if 'Linux' == platform.system():
+if 'linux' == sublime.platform():
     cmd = ['terminator', '--working-directory']
 
-if 'Windows' == platform.system():
+if 'windows' == sublime.platform():
     cmd = ['cmd']
 
 

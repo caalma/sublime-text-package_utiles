@@ -1,5 +1,3 @@
-# -*- coding:utf8 -*- 
-
 import sublime
 import sublime_plugin
 from os.path import realpath, dirname

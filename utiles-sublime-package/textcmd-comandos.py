@@ -1,18 +1,16 @@
-# -*- coding:utf8 -*- 
-
 import sublime
 import sublime_plugin
 from os.path import dirname, expanduser
 from subprocess import Popen, PIPE
 from datetime import datetime
-import platform
 from os import unlink
 
-if 'Linux' == platform.system():
+
+if 'linux' == sublime.platform():
     disponible = True
     cmd_python = 'python3'
 
-if 'Windows' == platform.system():
+if 'windows' == sublime.platform():
     disponible = False
     cmd_python = 'python'
 
