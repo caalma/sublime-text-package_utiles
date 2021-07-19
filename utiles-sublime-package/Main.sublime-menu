@@ -4,28 +4,6 @@
         "caption": "Útiles",
         "children":
             [
-                
-                {
-                    "id": "texto",
-                    "caption": "Texto",
-                    "children": [
-                        {
-                            "id": "pegar_html_text",
-                            "caption": "Pegar Texto-HTML",
-                            "command": "pegar_html_text",
-                        },
-                        {
-                            "id": "grabar_seleccion",
-                            "caption": "Grabar Selección",
-                            "command": "grabar_seleccion",
-                        },
-                        {
-                            "id": "normalizar",
-                            "caption": "Normalizar (selección)",
-                            "command": "normalizar",
-                        },
-                    ],
-                },
                 {
                     "id": "abrir",
                     "caption": "Abrir",
@@ -71,6 +49,48 @@
                     ],
                 },
                 {
+                    "id": "modificar",
+                    "caption": "Modificar",
+                    "children": [
+                        {
+                            "id": "borrar_archivo",
+                            "caption": "Borrar Archivo Actual",
+                            "command": "borrar_archivo",
+                        },
+                    ],
+                },
+                {
+                    "id": "texto",
+                    "caption": "Texto",
+                    "children": [
+                        {
+                            "id": "pegar_html_text",
+                            "caption": "Pegar Texto-HTML",
+                            "command": "pegar_html_text",
+                        },
+                        {
+                            "id": "grabar_seleccion",
+                            "caption": "Grabar Selección",
+                            "command": "grabar_seleccion",
+                        },
+                        {
+                            "id": "normalizar",
+                            "caption": "Normalizar (selección)",
+                            "command": "normalizar",
+                        },
+                        {
+                            "id": " youtube_title",
+                            "caption": "Youtube Título (selección)",
+                            "command": "youtube_title",
+                        },
+                        {
+                            "id": "texto_desde_url",
+                            "caption": "Texto desde URL (selección)",
+                            "command": "texto_desde_url",
+                        },
+                    ],
+                },
+                {
                     "id": "matematica",
                     "caption": "Matemática",
                     "children": [
@@ -88,22 +108,6 @@
                             "id": "calcular_decimal",
                             "caption": "Calcular Decimal (selección)",
                             "command": "calcular_decimal",
-                        },
-                    ],
-                },
-                {
-                    "id": "url",
-                    "caption": "Url",
-                    "children": [
-                        {
-                            "id": " youtube_title",
-                            "caption": "Youtube Título (selección)",
-                            "command": "youtube_title",
-                        },
-                        {
-                            "id": "texto_desde_url",
-                            "caption": "Texto desde URL (selección)",
-                            "command": "texto_desde_url",
                         },
                     ],
                 },

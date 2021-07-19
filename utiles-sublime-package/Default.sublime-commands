@@ -1,8 +1,9 @@
 [
     {"caption": "UTILES: Texto: Normalizar", "command": "normalizar"},
     {"caption": "UTILES: Texto: Pegar Texto HTML", "command": "pegar_html_text"},
-
     {"caption": "UTILES: Texto: Grabar Seleción", "command": "grabar_seleccion"},
+    {"caption": "UTILES: Texto: Texto desde URL", "command": "texto_desde_url"},
+    {"caption": "UTILES: Texto: Título de Youtube", "command": "youtube_title"},
 
     {"caption": "UTILES: Ejecutar: Comando Bash", "command": "cmd_bash"},
     {"caption": "UTILES: Ejecutar: Comando Python", "command": "cmd_python3"},
@@ -13,9 +14,6 @@
     {"caption": "UTILES: Matemática: Calcular Fración", "command": "calcular_fraccion"},
     {"caption": "UTILES: Matemática: Calcular Decimal", "command": "calcular_decimal"},
     
-    {"caption": "UTILES: URL: Texto desde URL", "command": "texto_desde_url"},
-    {"caption": "UTILES: URL: Título de Youtube", "command": "youtube_title"},
-    
     {"caption": "UTILES: Tiempo: Instante", "command": "instante"},
     {"caption": "UTILES: Tiempo: Fecha", "command": "fecha"},
     {"caption": "UTILES: Tiempo: Duración", "command": "duracion"},
@@ -25,6 +23,8 @@
 
     {"caption": "UTILES: Abrir Terminal", "command": "abrir_terminal"},
     {"caption": "UTILES: Abrir Recursos ( URL | pathfile )", "command": "abrir_recurso"},
+
+    {"caption": "UTILES: Modificar: Borrar Archivo Actual", "command": "borrar_archivo"},
 
     {"caption": "UTILES: Test", "command": "test"},
 ]
