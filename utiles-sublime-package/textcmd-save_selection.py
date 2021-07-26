@@ -1,7 +1,7 @@
 import sublime
 import sublime_plugin
 import webbrowser
-from os.path import dirname, splitext
+from os.path import dirname, splitext, expanduser
 
 
 class SaveSelectionCommand(sublime_plugin.TextCommand):
@@ -10,8 +10,10 @@ class SaveSelectionCommand(sublime_plugin.TextCommand):
         self.init_text = '\n\n' if self.save_mode == 'a' else ''
 
         file = self.view.window().active_view().file_name()
+        
+        file = expanduser('~') if file == None else dirname(file)
         sublime.save_dialog(self.__save, 
-            directory = dirname(file), 
+            directory = file, 
             name = 'filename', 
             extension = splitext(file)[1].strip('.')
             )
