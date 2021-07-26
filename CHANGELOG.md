@@ -1,6 +1,14 @@
 # Changelog
 
 ---
+## [0.0.5] - 2021-07-26
+### Added
+- Más lenguajes a ejecutar.
+
+### Changed
+- Ajustes de estilo. Traducido a inglés.
+
+---
 ## [0.0.4] - 2021-07-19
 ### Added
 - Borrar Archivo.
