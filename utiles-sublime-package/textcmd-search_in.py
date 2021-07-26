@@ -3,7 +3,7 @@ import sublime_plugin
 import webbrowser
 
 
-class BuscarEnDdgCommand(sublime_plugin.TextCommand):
+class SearchInDdgCommand(sublime_plugin.TextCommand):
     def run(self, edit, data=''):
         for region in self.view.sel():
             text_input = self.view.substr(region).strip()

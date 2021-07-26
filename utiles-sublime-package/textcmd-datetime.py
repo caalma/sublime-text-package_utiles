@@ -3,7 +3,7 @@ import sublime_plugin
 from datetime import datetime
 
 
-class FechaCommand(sublime_plugin.TextCommand):
+class DatetimeCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         region = self.view.sel()[0]
         init = min(region.a, region.b)
@@ -11,7 +11,7 @@ class FechaCommand(sublime_plugin.TextCommand):
         self.view.insert(edit, init, text)
 
 
-class DuracionCommand(sublime_plugin.TextCommand):
+class DurationCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for region in self.view.sel():
             s = ';'
@@ -29,7 +29,7 @@ class DuracionCommand(sublime_plugin.TextCommand):
             self.view.insert(edit, region.end(), text)
 
 
-class InstanteCommand(sublime_plugin.TextCommand):
+class NowCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for region in self.view.sel():
             init = min(region.a, region.b)
@@ -38,7 +38,7 @@ class InstanteCommand(sublime_plugin.TextCommand):
             self.view.insert(edit, init, text)
 
 
-class InstanteComoFechaCommand(sublime_plugin.TextCommand):
+class NowAsDateCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for region in self.view.sel():
             text_input = self.view.substr(region).strip()
@@ -48,7 +48,7 @@ class InstanteComoFechaCommand(sublime_plugin.TextCommand):
             self.view.insert(edit, region.end(), text)
 
 
-class InstanteComoHoraCommand(sublime_plugin.TextCommand):
+class NowAsTimeCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for region in self.view.sel():
             text_input = self.view.substr(region).strip()
@@ -58,7 +58,7 @@ class InstanteComoHoraCommand(sublime_plugin.TextCommand):
             self.view.insert(edit, region.end(), text)
 
 
-class SumarTiemposCommand(sublime_plugin.TextCommand):
+class SumTimesCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for region in self.view.sel():
             text_input = self.view.substr(region).strip()

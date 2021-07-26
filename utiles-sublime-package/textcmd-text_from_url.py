@@ -11,7 +11,7 @@ if 'windows' == sublime.platform():
     python = 'python'
 
 
-class TextoDesdeUrlCommand(sublime_plugin.TextCommand):
+class TextFromUrlCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         region = self.view.sel()[0]
         url = self.view.substr(region).strip()

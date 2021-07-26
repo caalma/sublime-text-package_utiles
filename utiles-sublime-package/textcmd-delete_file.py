@@ -4,7 +4,7 @@ from os import unlink
 from os.path import basename
 
 
-class BorrarArchivoCommand(sublime_plugin.TextCommand):
+class DeleteFileCommand(sublime_plugin.TextCommand):
     def run(self, edit, text_input):
         if not text_input == 'NO': 
             active = self.view.window().active_view()

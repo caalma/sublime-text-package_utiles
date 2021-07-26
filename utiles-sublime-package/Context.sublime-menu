@@ -1,6 +1,6 @@
 [
     { "caption": "-"},
-    { "command": "abrir_recurso", "caption": "Abrir Recurso" },
-    { "command": "buscar_en_ddg", "caption": "Buscar en DDG" },
-    { "command": "abrir_terminal", "caption": "Abrir Consola" },
+    { "command": "open_resource", "caption": "Abrir Recurso" },
+    { "command": "search_in_ddg", "caption": "Buscar en DDG" },
+    { "command": "open_terminal", "caption": "Abrir Consola" },
 ]

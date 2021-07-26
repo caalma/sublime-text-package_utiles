@@ -1,8 +1,8 @@
 [
-    {"caption": "UTILES: Texto: Normalizar", "command": "normalizar"},
-    {"caption": "UTILES: Texto: Pegar Texto HTML", "command": "pegar_html_text"},
-    {"caption": "UTILES: Texto: Grabar Seleción", "command": "grabar_seleccion"},
-    {"caption": "UTILES: Texto: Texto desde URL", "command": "texto_desde_url"},
+    {"caption": "UTILES: Texto: Normalizar", "command": "normalize"},
+    {"caption": "UTILES: Texto: Pegar Texto HTML", "command": "paste_html_text"},
+    {"caption": "UTILES: Texto: Grabar Seleción", "command": "save_selection"},
+    {"caption": "UTILES: Texto: Texto desde URL", "command": "text_from_url"},
     {"caption": "UTILES: Texto: Título de Youtube", "command": "youtube_title"},
 
     {"caption": "UTILES: Ejecutar: Comando Bash", "command": "code_bash"},
@@ -12,23 +12,23 @@
     {"caption": "UTILES: Ejecutar: Comando New Lisp", "command": "code_newlisp"},
     {"caption": "UTILES: Ejecutar: Comando SBCL Lisp", "command": "code_sbcl"},
 
-    {"caption": "UTILES: Ejecutar: Buscar en DDG", "command": "buscar_en_ddg"},
+    {"caption": "UTILES: Ejecutar: Buscar en DDG", "command": "search_in_ddg"},
 
-    {"caption": "UTILES: Matemática: Calcular", "command": "calcular"},
-    {"caption": "UTILES: Matemática: Calcular Fración", "command": "calcular_fraccion"},
-    {"caption": "UTILES: Matemática: Calcular Decimal", "command": "calcular_decimal"},
+    {"caption": "UTILES: Matemática: Calcular", "command": "calcule"},
+    {"caption": "UTILES: Matemática: Calcular Fración", "command": "calcule_fraccion"},
+    {"caption": "UTILES: Matemática: Calcular Decimal", "command": "calcule_decimal"},
     
-    {"caption": "UTILES: Tiempo: Instante", "command": "instante"},
-    {"caption": "UTILES: Tiempo: Fecha", "command": "fecha"},
-    {"caption": "UTILES: Tiempo: Duración", "command": "duracion"},
-    {"caption": "UTILES: Tiempo: Sumar Tiempos", "command": "sumar_tiempos"},
-    {"caption": "UTILES: Tiempo: Instante a Fecha", "command": "instante_como_fecha"},
-    {"caption": "UTILES: Tiempo: Instante a Hora", "command": "instante_como_hora"},
+    {"caption": "UTILES: Tiempo: Instante", "command": "now"},
+    {"caption": "UTILES: Tiempo: Fecha", "command": "datetime"},
+    {"caption": "UTILES: Tiempo: Duración", "command": "duration"},
+    {"caption": "UTILES: Tiempo: Sumar Tiempos", "command": "sum_times"},
+    {"caption": "UTILES: Tiempo: Instante a Fecha", "command": "now_as_date"},
+    {"caption": "UTILES: Tiempo: Instante a Hora", "command": "now_as_time"},
 
-    {"caption": "UTILES: Abrir Terminal", "command": "abrir_terminal"},
-    {"caption": "UTILES: Abrir Recursos ( URL | pathfile )", "command": "abrir_recurso"},
+    {"caption": "UTILES: Abrir Terminal", "command": "open_terminal"},
+    {"caption": "UTILES: Abrir Recursos ( URL | pathfile )", "command": "open_recurso"},
 
-    {"caption": "UTILES: Modificar: Borrar Archivo Actual", "command": "borrar_archivo"},
+    {"caption": "UTILES: Modificar: Borrar Archivo Actual", "command": "delete_file"},
 
     {"caption": "UTILES: Test", "command": "test"},
 ]

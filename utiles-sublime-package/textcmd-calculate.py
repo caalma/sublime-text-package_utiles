@@ -13,7 +13,7 @@ if 'windows' == sublime.platform():
     python = 'python'
 
 
-class CalcularCommand(sublime_plugin.TextCommand):
+class CalculeCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for region in self.view.sel():
             text_input = self.view.substr(region).strip()
@@ -37,7 +37,7 @@ class CalcularCommand(sublime_plugin.TextCommand):
             self.view.insert(edit, region.end(), text)
 
 
-class CalcularFraccionCommand(sublime_plugin.TextCommand):
+class CalculeFractionCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for region in self.view.sel():
             text_input = self.view.substr(region)
@@ -48,7 +48,7 @@ class CalcularFraccionCommand(sublime_plugin.TextCommand):
             self.view.insert(edit, region.end(), text)
 
 
-class CalcularDecimalCommand(sublime_plugin.TextCommand):
+class CalculeDecimalCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for region in self.view.sel():
             text_input = self.view.substr(region)

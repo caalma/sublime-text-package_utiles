@@ -3,7 +3,7 @@ import sublime_plugin
 import webbrowser
 from os.path import exists, realpath, dirname, join, expanduser
 
-class AbrirRecursoCommand(sublime_plugin.TextCommand):
+class OpenResourceCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         err = []
         for region in self.view.sel():

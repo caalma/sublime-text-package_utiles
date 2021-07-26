@@ -12,17 +12,17 @@
                         {
                             "id": "recurso",
                             "caption": "Recurso",
-                            "command": "abrir_recurso",
+                            "command": "open_resource",
                         },
                         {
                             "id": "terminal",
                             "caption": "Terminal",
-                            "command": "abrir_terminal",
+                            "command": "open_terminal",
                         },
                         {
                             "id": "bucar_ddg",
                             "caption": "Buscar en DDG (selección)",
-                            "command": "buscar_en_ddg",
+                            "command": "search_in_ddg",
                         },
                     ],
                 },
@@ -70,7 +70,7 @@
                         {
                             "id": "borrar_archivo",
                             "caption": "Borrar Archivo Actual",
-                            "command": "borrar_archivo",
+                            "command": "delete_file",
                         },
                     ],
                 },
@@ -81,17 +81,17 @@
                         {
                             "id": "pegar_html_text",
                             "caption": "Pegar Texto-HTML",
-                            "command": "pegar_html_text",
+                            "command": "paste_html_text",
                         },
                         {
                             "id": "grabar_seleccion",
                             "caption": "Grabar Selección",
-                            "command": "grabar_seleccion",
+                            "command": "save_selection",
                         },
                         {
                             "id": "normalizar",
                             "caption": "Normalizar (selección)",
-                            "command": "normalizar",
+                            "command": "normalize",
                         },
                         {
                             "id": " youtube_title",
@@ -101,7 +101,7 @@
                         {
                             "id": "texto_desde_url",
                             "caption": "Texto desde URL (selección)",
-                            "command": "texto_desde_url",
+                            "command": "text_from_url",
                         },
                     ],
                 },
@@ -112,17 +112,17 @@
                         {
                             "id": "calcular",
                             "caption": "Calcular (selección)",
-                            "command": "calcular",
+                            "command": "calcule",
                         },
                         {
                             "id": "calcular_fraccion",
                             "caption": "Calcular Fracción (selección)",
-                            "command": "calcular_fraccion",
+                            "command": "calcule_fraction",
                         },
                         {
                             "id": "calcular_decimal",
                             "caption": "Calcular Decimal (selección)",
-                            "command": "calcular_decimal",
+                            "command": "calcule_decimal",
                         },
                     ],
                 },
@@ -133,32 +133,32 @@
                         {
                             "id": "fecha",
                             "caption": "Fecha",
-                            "command": "fecha",
+                            "command": "datetime",
                         },
                         {
                             "id": "instante",
                             "caption": "Instante",
-                            "command": "instante",
+                            "command": "now",
                         },
                         {
                             "id": "  instante_como_fecha",
                             "caption": "Instante a Fecha (selección)",
-                            "command": "instante_como_fecha",
+                            "command": "now_as_date",
                         },
                         {
                             "id": "instante_como_hora",
                             "caption": "Instante a Hora (selección)",
-                            "command": "instante_como_hora",
+                            "command": "now_as_time",
                         },
                         {
                             "id": "duracion",
                             "caption": "Duración (selección)",
-                            "command": "duracion",
+                            "command": "duration",
                         },
                         {
                             "id": "sumar_tiempos",
                             "caption": "Sumar Tiempos (selección)",
-                            "command": "sumar_tiempos",
+                            "command": "sum_times",
                         },
                     ],
                 },
@@ -169,7 +169,7 @@
                         {
                             "id": "abrir_package",
                             "caption": "Abrir Plugin Package",
-                            "command": "abrir_package",
+                            "command": "open_package",
                         },
                         {
                             "id": "test",

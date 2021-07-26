@@ -4,7 +4,7 @@ import webbrowser
 from os.path import dirname, splitext
 
 
-class GrabarSeleccionCommand(sublime_plugin.TextCommand):
+class SaveSelectionCommand(sublime_plugin.TextCommand):
     def run(self, edit, text_input):
         self.save_mode = 'a' if text_input == 'A' else 'w'
         self.init_text = '\n\n' if self.save_mode == 'a' else ''

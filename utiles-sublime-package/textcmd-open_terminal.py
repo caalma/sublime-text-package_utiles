@@ -11,7 +11,7 @@ if 'windows' == sublime.platform():
     cmd = ['cmd']
 
 
-class AbrirTerminalCommand(sublime_plugin.TextCommand):
+class OpenTerminalCommand(sublime_plugin.TextCommand):
     def run(self, edit, data=''):
-        r = [dirname(self.view.window().active_view().file_name())]
-        Popen(cmd + r)
+        path = [dirname(self.view.window().active_view().file_name())]
+        Popen(cmd + path)
