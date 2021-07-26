@@ -32,19 +32,34 @@
                     "children": [
 
                         {
-                            "id": "cmd_bash",
+                            "id": "code_bash",
                             "caption": "Bash (selección)",
-                            "command": "cmd_bash",
+                            "command": "code_bash",
                         },
                         {
-                            "id": "cmd_python3",
+                            "id": "code_python3",
                             "caption": "Python3 (selección)",
-                            "command": "cmd_python3",
+                            "command": "code_python3",
                         },
                         {
-                            "id": "cmd_nodejs",
-                            "caption": "NodeJS (selección)",
-                            "command": "cmd_nodejs",
+                            "id": "code_javascript",
+                            "caption": "Javascript NodeJS (selección)",
+                            "command": "code_javascript",
+                        },
+                        {
+                            "id": "code_clisp",
+                            "caption": "CLisp (selección)",
+                            "command": "code_clisp",
+                        },
+                        {
+                            "id": "code_newlisp",
+                            "caption": "New Lisp (selección)",
+                            "command": "code_newlisp",
+                        },
+                        {
+                            "id": "code_sbcl",
+                            "caption": "CLisp (selección)",
+                            "command": "code_sbcl",
                         },
                     ],
                 },

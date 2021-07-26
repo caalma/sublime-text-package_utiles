@@ -6,12 +6,18 @@
     { "keys": ["ctrl+.", "s"], "command": "sumar_tiempos" },
     { "keys": ["ctrl+.", "a"], "command": "instante_como_fecha" },
     { "keys": ["ctrl+.", "o"], "command": "instante_como_hora" },
+
     { "keys": ["ctrl+.", "m", "c"], "command": "calcular" },
     { "keys": ["ctrl+.", "m", "q"], "command": "calcular_fraccion" },
     { "keys": ["ctrl+.", "m", "d"], "command": "calcular_decimal" },
-    { "keys": ["ctrl+.", "b", "b"], "command": "cmd_bash" },
-    { "keys": ["ctrl+.", "b", "p"], "command": "cmd_python3" },
-    { "keys": ["ctrl+.", "b", "n"], "command": "cmd_nodejs" },
+
+    { "keys": ["ctrl+.", "c", "b"], "command": "code_bash" },
+    { "keys": ["ctrl+.", "c", "p"], "command": "code_python3" },
+    { "keys": ["ctrl+.", "c", "j"], "command": "code_javascript" },
+    { "keys": ["ctrl+.", "c", "l"], "command": "code_clisp" },
+    { "keys": ["ctrl+.", "c", "n"], "command": "code_newlisp" },
+    { "keys": ["ctrl+.", "c", "s"], "command": "code_sbcl" },
+
     { "keys": ["ctrl+.", "y"], "command": "youtube_title" },
     { "keys": ["ctrl+.", "g"], "command": "buscar_en_ddg" },
     { "keys": ["ctrl+.", "z"], "command": "test" },

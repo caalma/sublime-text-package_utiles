@@ -5,9 +5,13 @@
     {"caption": "UTILES: Texto: Texto desde URL", "command": "texto_desde_url"},
     {"caption": "UTILES: Texto: Título de Youtube", "command": "youtube_title"},
 
-    {"caption": "UTILES: Ejecutar: Comando Bash", "command": "cmd_bash"},
-    {"caption": "UTILES: Ejecutar: Comando Python", "command": "cmd_python3"},
-    {"caption": "UTILES: Ejecutar: Comando NodeJS", "command": "cmd_nodejs"},
+    {"caption": "UTILES: Ejecutar: Comando Bash", "command": "code_bash"},
+    {"caption": "UTILES: Ejecutar: Comando Python", "command": "code_python3"},
+    {"caption": "UTILES: Ejecutar: Comando Javascript", "command": "code_javascrtipt"},
+    {"caption": "UTILES: Ejecutar: Comando Common Lisp", "command": "code_clisp"},
+    {"caption": "UTILES: Ejecutar: Comando New Lisp", "command": "code_newlisp"},
+    {"caption": "UTILES: Ejecutar: Comando SBCL Lisp", "command": "code_sbcl"},
+
     {"caption": "UTILES: Ejecutar: Buscar en DDG", "command": "buscar_en_ddg"},
 
     {"caption": "UTILES: Matemática: Calcular", "command": "calcular"},
