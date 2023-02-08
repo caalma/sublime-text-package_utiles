@@ -11,6 +11,7 @@
     {"caption": "UTILES: Ejecutar: Comando Common Lisp", "command": "code_clisp"},
     {"caption": "UTILES: Ejecutar: Comando New Lisp", "command": "code_newlisp"},
     {"caption": "UTILES: Ejecutar: Comando SBCL Lisp", "command": "code_sbcl"},
+    {"caption": "UTILES: Ejecutar: Comando Nim", "command": "code_nim"},
 
     {"caption": "UTILES: Ejecutar: Buscar en DDG", "command": "search_in_ddg"},
 

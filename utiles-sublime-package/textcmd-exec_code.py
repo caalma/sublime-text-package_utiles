@@ -15,6 +15,7 @@ interpreters = {
         'clisp': ['clisp'],
         'newlisp': ['newlisp', '<'],
         'sbcl': ['sbcl', '--script'],
+        'nim': ['nim', 'c', '--hints:off', '-r'], # falla
     },
     'windows': {
         'python': ['python'],
@@ -47,6 +48,13 @@ ls
 (print (+ 2 2))
 '''
 
+''' nim
+import strformat
+let saludo:string = "Hola"
+let calculo:int = 2 + 4
+echo &"{saludo}, {calculo}"
+'''
+
 
 class CodeBashCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -76,6 +84,10 @@ class CodeNewlispCommand(sublime_plugin.TextCommand):
 class CodeSbclCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         exec_code(self, edit, 'sbcl')
+
+class CodeNimCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        exec_code(self, edit, 'nim')
 
 
 def exec_code(self, edit, interpreter):
